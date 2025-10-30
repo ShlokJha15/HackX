@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { LogOut } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
+import brandLogo from '../assets/brand-logo.png';
+
 
 const Navbar = () => {
   const { user, logout } = useAuth();

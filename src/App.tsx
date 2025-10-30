@@ -12,6 +12,8 @@ import Dashboard from "./pages/Dashboard";
 import QuickChat from "./pages/QuickChat";
 import DoctorBooking from "./pages/DoctorBooking";
 import NotFound from "./pages/NotFound";
+import brandLogo from '../assets/brand-logo.png';
+
 
 const queryClient = new QueryClient();
 
