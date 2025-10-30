@@ -11,6 +11,7 @@ import { Eye, EyeOff, CalendarIcon } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 import OTPVerification from '@/components/OTPVerification';
+import brandLogo from '@/assets/brand-logo.png';
 
 const Signup = () => {
   const [step, setStep] = useState<'form' | 'otp'>('form');
@@ -119,9 +120,14 @@ const Signup = () => {
       <div className="w-full max-w-2xl">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 mx-auto bg-primary rounded-full flex items-center justify-center mb-4">
-            <div className="text-4xl font-bold text-primary-foreground">P</div>
-          </div>
+          <div className="w-60 h-25 mx-auto overflow-hidden flex items-center justify-center">
+           <img
+           src={brandLogo}
+          alt="PulseLink AI Logo"
+          className="w-full h-full object-contain"
+         />
+  </div>
+
           <h1 className="text-3xl font-bold mb-2">Create Account</h1>
           <p className="text-muted-foreground">Join PulseLink AI for better healthcare</p>
         </div>

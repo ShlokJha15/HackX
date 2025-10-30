@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { useAuth } from '@/contexts/AuthContext';
 import { toast } from 'sonner';
 import { Eye, EyeOff } from 'lucide-react';
+import brandLogo from '@/assets/brand-logo.png';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -39,9 +40,14 @@ const Login = () => {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-24 h-24 mx-auto bg-primary rounded-full flex items-center justify-center mb-4">
-            <div className="text-5xl font-bold text-primary-foreground">P</div>
-          </div>
+          <div className="w-80 h-27 mx-auto overflow-hidden flex items-center justify-center">
+          <img
+          src={brandLogo}
+        alt="PulseLink AI Logo"
+       className="w-full h-full object-contain"
+  />
+</div>
+
           <h1 className="text-3xl font-bold mb-2">Login</h1>
           <p className="text-muted-foreground">Welcome back to PulseLink AI</p>
         </div>

@@ -4,6 +4,7 @@ import { MessageSquare, UserPlus, LogIn } from 'lucide-react';
 import brandLogo from '../assets/brand-logo.png';
 import '../styles/animated-bg.css'; // 👈 add this line (we’ll create this file next)
 
+
 const Start = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 animated-gradient">
